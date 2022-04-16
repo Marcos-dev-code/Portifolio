@@ -156,7 +156,7 @@ section .title::after{
     transform: translateX(-50%)
 }
 
-.about, .services, .skills, .contact{
+.about, .services, .skills, .contact, footer{
     font-family:'roboto', sans-serif;    
 }
 .about .about-content,
@@ -336,16 +336,23 @@ section .title::after{
 /*SESSÃO CONTATO*/
 
 .contact{
-    background:rgba(34, 34, 34, 0.966)
+    background:rgba(34, 34, 34, 0.973)
 }
 .contact .title{
     color:#fff
 }
 .contact .title::before{
     background:#fff;
-}    
+} 
+.contact .title::after{
+    content:"Fale comigo";
+    background:#222
+}   
 .contact .contact-content .column{
     width: calc(50% - 30px);
+}
+.contact .contact-content{
+    align-items: flex-start;
 }
 .contact .contact-content .left p{
     text-align: justify;
@@ -445,9 +452,21 @@ section .title::after{
  .contact .right form .button button:hover{
      color:#00804b;
      background:none;
+   
  }
 
+/*sessão footer*/
 
+footer { 
+    padding: 20px 23px;
+    background:rgba(34, 34, 34, 0.897);
+    color:#fff;
+    text-align:center;
+}
+footer span a {
+    color:#00804b;
+    text-decoration: none;
+}
 
 /*RESPONSIVO*/
 
@@ -519,7 +538,8 @@ section .title::after{
         width: calc(50% - 10px);
         margin-bottom:20px;
     }
-    .skills .skills-content .column{
+    .skills .skills-content .column,
+    .contact .contact-content .column{
         width:100%;
         margin-bottom:35px
     }
