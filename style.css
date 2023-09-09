@@ -229,6 +229,11 @@ section .title::after{
     border: 2px solid #00804b;
     transition: all 0.3s ease;
 }
+.about .about-content .right a.perfil-externo {
+    
+    margin-left: 50px;
+    justify-content: space-between;
+}
 .about .about-content .right a:hover{
     color:#00804b;
     background:none;
@@ -316,6 +321,7 @@ section .title::after{
     color:#00804b;
     background:none;
 }
+
 .skills .skills-content .right .bars{
     margin-bottom:15px;
 }
@@ -569,9 +575,10 @@ footer span a:hover{
     }
     .skills .skills-content .column,
     .contact .contact-content .column{
-        width:100%;
-     
+        width:100%;     
     }
+    .skills .skills-content .left a {
+        margin-bottom:25px
 
 }
 @media (max-width:690px){
