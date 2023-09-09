@@ -90,9 +90,33 @@ html{
 .scroll-up-btn.show{
     opacity: 1;
     pointer-events: auto;
-    bottom:30px;
+    bottom:7px;
   
 }
+/*Sessão Whatsapp*/
+
+#whatsapp-icon{
+    position: fixed;
+    bottom: 62px;
+    right: 20px;
+    z-index: 1000;
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 /*Home-inicio*/
 
 .home{
@@ -229,10 +253,28 @@ section .title::after{
     border: 2px solid #00804b;
     transition: all 0.3s ease;
 }
-.about .about-content .right a.perfil-externo {
-    
-    margin-left: 50px;
+.about .about-content .right .perfil-externo{ 
+    all:unset;
+    display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width:90%; 
+    margin-top:30px;       
+}
+.about .about-content .right .perfil-externo .cv-download {
+    padding-top: 13px;
+}
+
+.about .about-content .right .perfil-externo .btn-linkedin{
+    all: unset;
+    padding-top: 27px;
+    padding-left:10px; /*para deixar um pouco mais afastado do link do curriculo */
+    cursor: pointer;
+}
+.about .about-content .right .perfil-externo .btn-github{
+    all: unset;
+    padding-top: 20px;
+    cursor: pointer;
 }
 .about .about-content .right a:hover{
     color:#00804b;
@@ -484,10 +526,9 @@ section .title::after{
  }
  .contact .right form .button button:hover{
      color:#00804b;
-     background:none;
-   
+     background:none;   
  }
-
+ 
 /*sessão footer*/
 
 footer { 
@@ -509,16 +550,69 @@ footer span a:hover{
     .navbar .max-width{
         margin-left:0;
     }
-}
+    /* Modificar o link */
+    #whatsapp-icon{
+        right:13px;
+    }
+
+    /* Modificar imagem do link*/
+    #whatsapp-icon img{
+        bottom: 100px; /* Posição alternativa para telas menores */
+        right: 1px;
+        width: 50px; /* Tamanho alternativo para telas menores */
+        height: 50px;
+    }
+    .scroll-up-btn{
+        right:20px;
+        height:40px;
+        width:40px;
+        margin-bottom:7px;
+    }
 @media (max-width:1104px){
     .about .about-content .left img{
         width:350px;
         height:350px;
     }
+    /* Modificar o link */
+    #whatsapp-icon{
+        right:13px;
+    }
+
+    /* Modificar imagem do link*/
+    #whatsapp-icon img{
+        bottom: 100px; /* Posição alternativa para telas menores */
+        right: 1px;
+        width: 50px; /* Tamanho alternativo para telas menores */
+        height: 50px;
+    }
+    .scroll-up-btn{
+        right:20px;
+        height:40px;
+        width:40px;
+        margin-bottom:7px;
+    }
 }
 @media (max-width:991px){
         .navbar .max-width{
             padding:0 50px ;
+    }
+    /* Modificar o link */
+    #whatsapp-icon{
+        right:13px;
+    }
+
+    /* Modificar imagem do link*/
+    #whatsapp-icon img{
+        bottom: 100px; /* Posição alternativa para telas menores */
+        right: 1px;
+        width: 50px; /* Tamanho alternativo para telas menores */
+        height: 50px;
+    }
+    .scroll-up-btn{
+        right:20px;
+        height:40px;
+        width:40px;
+        margin-bottom:7px;
     }
 }
 @media (max-width:960px){
@@ -580,6 +674,26 @@ footer span a:hover{
     .skills .skills-content .left a {
         margin-bottom:25px
 
+    }
+        /* Modificar o link */
+        #whatsapp-icon{
+            right:13px;
+        }
+    
+        /* Modificar imagem do link*/
+        #whatsapp-icon img{
+            bottom: 100px; /* Posição alternativa para telas menores */
+            right: 1px;
+            width: 50px; /* Tamanho alternativo para telas menores */
+            height: 50px;
+        }
+        .scroll-up-btn{
+            right:17px;
+            height:40px;
+            width:40px;
+            margin-bottom:2px;
+        }    
+      
 }
 @media (max-width:690px){
     .home .home-content .text-2{
@@ -591,6 +705,24 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%
     }
+        /* Modificar o link */
+        #whatsapp-icon{
+            right:13px;
+        }
+    
+        /* Modificar imagem do link*/
+        #whatsapp-icon img{
+            bottom: 100px; /* Posição alternativa para telas menores */
+            right: 1px;
+            width: 50px; /* Tamanho alternativo para telas menores */
+            height: 50px;
+        }
+        .scroll-up-btn{
+            right:20px;
+            height:40px;
+            width:40px;
+            margin-bottom:2,5px;
+        }
    
 @media (max-width:560px){
     .home .home-content .text-2{
