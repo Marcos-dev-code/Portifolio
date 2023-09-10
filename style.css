@@ -270,11 +270,32 @@ section .title::after{
     padding-top: 27px;
     padding-left:10px; /*para deixar um pouco mais afastado do link do curriculo */
     cursor: pointer;
+    transition: transform 0.2s ease; /* Efeito de transição suave para a transformação */
 }
+
+.about .about-content .right .perfil-externo .btn-linkedin img{
+    width:100%;
+    height:auto;
+}
+
+.about .about-content .right .perfil-externo .btn-linkedin:hover {
+    transform:scale(1.1);
+}
+
 .about .about-content .right .perfil-externo .btn-github{
     all: unset;
     padding-top: 20px;
     cursor: pointer;
+    transition: transform 0.3s ease; /* Efeito de transição suave para a transformação */
+}
+
+.about .about-content .right .perfil-externo .btn-github img{
+    width:100%;
+    height:auto;
+}
+
+.about .about-content .right .perfil-externo .btn-github:hover{
+    transform:scale(1.1);
 }
 .about .about-content .right a:hover{
     color:#00804b;
@@ -548,7 +569,7 @@ footer span a:hover{
 
 @media (max-width:1300px){
     .navbar .max-width{
-        margin-left:0;
+        margin: left 0px;
     }
     /* Modificar o link */
     #whatsapp-icon{
@@ -617,7 +638,7 @@ footer span a:hover{
 }
 @media (max-width:960px){
     .max-width{ 
-        max-width: 800;       
+        max-width: 800px;       
         padding:0 50px;    
     }
     .menu-btn{
@@ -706,23 +727,7 @@ footer span a:hover{
         width: 100%
     }
         /* Modificar o link */
-        #whatsapp-icon{
-            right:13px;
-        }
-    
-        /* Modificar imagem do link*/
-        #whatsapp-icon img{
-            bottom: 100px; /* Posição alternativa para telas menores */
-            right: 1px;
-            width: 50px; /* Tamanho alternativo para telas menores */
-            height: 50px;
-        }
-        .scroll-up-btn{
-            right:20px;
-            height:40px;
-            width:40px;
-            margin-bottom:2,5px;
-        }
+}      
    
 @media (max-width:560px){
     .home .home-content .text-2{
@@ -732,21 +737,3 @@ footer span a:hover{
         font-size: 25px;
     }
 }
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
