@@ -726,7 +726,21 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%
     }
-        /* Modificar o link */
+    .about .about-content .right .perfil-externo{
+        display: flex;
+        flex-direction: column;  /* Coloca os links em uma coluna vertical */
+        align-items: center;     /* Centraliza os links horizontalmente */
+        text-align: center;
+          /* Centraliza o texto dentro dos links */
+        }
+      .about .about-content .right .perfil-externo .cv-download {
+            padding:10px ;
+        }
+      .about .about-content .right .perfil-externo .cv-download,
+      .about .about-content .right .perfil-externo .btn-linkedin,
+      .about .about-content .right .perfil-externo .btn-github{
+        margin-top:25px;
+        }
 }      
    
 @media (max-width:560px){
@@ -735,5 +749,21 @@ footer span a:hover{
     }
     .home .home-content .text-3{
         font-size: 25px;
+    }
+         
+  .about .about-content .right .perfil-externo{
+    display: flex;
+    flex-direction: column;  /* Coloca os links em uma coluna vertical */
+    align-items: center;     /* Centraliza os links horizontalmente */
+    text-align: center;
+      /* Centraliza o texto dentro dos links */
+    }
+  .about .about-content .right .perfil-externo .cv-download {
+        padding:10px ;
+    }
+  .about .about-content .right .perfil-externo .cv-download,
+  .about .about-content .right .perfil-externo .btn-linkedin,
+  .about .about-content .right .perfil-externo .btn-github{
+    margin-top:20px;
     }
 }
