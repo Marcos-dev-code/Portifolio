@@ -322,13 +322,14 @@ section .title::after{
     content:"Que ofereço";
 }
 .services .serv-content .card{
-    width: calc(30% - 20px);
+    width: calc(30% - 30px);
     background:#222;
     text-align: center;
     border-radius:6px;
-    padding: 20px 25px;
+    padding: 60px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    
 }
 .services .serv-content .card:hover{
     background:#00804b;
@@ -351,6 +352,24 @@ section .title::after{
     font-weight:500;
     margin: 10px 0 7px 0;
 }
+.atencao{
+    color:#b7d411;
+    font-size:20px;
+    font-weight:500;
+    height:20px;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+};
 
 /*SESSÃO ESPECIALIDADES*/
 
@@ -589,6 +608,7 @@ footer span a:hover{
         width:40px;
         margin-bottom:7px;
     }
+}
 @media (max-width:1104px){
     .about .about-content .left img{
         width:350px;
