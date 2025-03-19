@@ -2,8 +2,6 @@
 # Para acessar meu portfólio, clique no link abaixo:
 [Portfólio de Marcos Roberto](https://marcos-dev-code.github.io/Portifolio/)
 
-## Visão Geral
-Bem-vindo ao meu projeto de portfólio! Este projeto demonstra minhas habilidades e experiências como desenvolvedor, além de fornecer informações sobre mim e os serviços que ofereço.
 
 ## Visão Geral
 
