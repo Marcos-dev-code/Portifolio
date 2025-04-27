@@ -222,7 +222,7 @@ section .title::after{
 /*SESSÃO SOBRE*/
 
 .about .title::after{
-    content:"Quem sou eu";
+    content:"Who I am?";
 }
 .about .about-content .left{
     width:45%;
