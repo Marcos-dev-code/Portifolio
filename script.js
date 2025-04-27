@@ -30,7 +30,7 @@ $(document).ready(function () {
     // Função para inicializar a animação de digitação
     function initTypingAnimation(selector) {
         new Typed(selector, {
-            strings: ["Desenvolvedor", "Freelancer", "Designer"],
+            strings: ["Developer", "Freelancer", "Designer"],
             typeSpeed: 100,
             backSpeed: 60,
             loop: true

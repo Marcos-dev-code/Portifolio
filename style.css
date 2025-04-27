@@ -319,8 +319,7 @@ section .title::after{
 }
 .services .title::after{
     background:#111;
-    content:"Que ofereço";
-}
+    content: "What I offer";}
 .services .serv-content .card{
     width: calc(30% - 30px);
     background:#222;
@@ -375,6 +374,8 @@ section .title::after{
 
 .skills .title::after{
     content:"Que faço";
+
+
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -460,7 +461,7 @@ section .title::after{
     background:#fff;
 } 
 .contact .title::after{
-    content:"Fale comigo";
+    content: "Talk to me";
     background:#222
 }   
 .contact .contact-content .column{
